@@ -1,0 +1,52 @@
+"""
+@author: Si Jie
+Data Scientist Technical Test
+Finantier 2021
+"""
+
+Objective: This document is a technical test for a data scientist/machine learning engineer position at Finantier
+Supporting document(s): finantier_ds_technical_test_dataset.csv
+
+------------------------------------------------ 	Instructions	 ------------------------------------------------------------------------
+
+1. Given the data (csv), read the data into a pandas DataFrame. 
+	Hint: The data has been tempered with and will require some cleaning. How you wish to clean it is up to you, but doing it programmatically will earn you more impressions :)
+
+2. Using the data from step 1, implement a machine learning (ML) or deep learning (DL) model for the default classification problem. You will need to predict the likelihood of customer defaulting on telco payment based on their telco data.
+
+Note that the model that you are implementing should be a fairly recent model (within 3 years prior to today). 
+	Where you can earn more impressions:
+	- Good feature engineering will earn you more impression ponts. P.S. We do value quality over quantity.
+	- Implementing a DL model that can handle tabular data (e.g. TabNet - https://arxiv.org/abs/1908.07442) will earn you more impression.
+	- That said, it's much better to implement an ML model well than to implement a half-baked DL model
+	- For whichever model that you are using, do provide the source of the github/library as well as the paper (if applicable).
+
+	Hint: We aren't too fixated on the absolute value of the evaluation metric (e.g. 90+% for F1-score). Rather, we want to understand your thought process. We want to know  why you chose the evaluation metric. Thus, even if it is a low performance, but the steps are well-thought, we will love it as well.
+
+3. Once your model from step 2 is completed, you will need to deploy it via an API endpoint. You can choose to use any framework/library. 
+	
+	Hint: If you aren't familiar with deployment on API, you can check out FastAPI (https://fastapi.tiangolo.com/) or Flask (https://flask-restful.readthedocs.io/en/latest/).
+	
+	Note: You should include testing for your API endpoint either using pytest (e.g. https://fastapi.tiangolo.com/tutorial/testing/) or unittest (e.g. https://www.datacamp.com/community/tutorials/unit-testing-python).
+
+4. Deploy your API on a Docker using a Dockerfile. Once again, we are not looking for something too fancy. As long as your model and API endpoint can be deployed and run locally, we will fall in love with your code.
+	Hints: 
+	- https://docs.docker.com/develop/develop-images/dockerfile_best-practices/
+	- https://hackernoon.com/flask-api-containerization-using-docker-2er31go
+	- https://fastapi.tiangolo.com/deployment/docker/
+
+5. Write a short readme.md of how to use the code that you have written. 
+You might want to consider the following points: How to run your docker, which API (plus parameters) to ping and how good your model is performing.
+If you feel that there are other things that are important in your code and will make it easier to understand, please feel free to add it into your readme.md.
+In short, anyone who reads it need can (at least) run your code and explain it without asking you anything.
+
+6. Upload your readme.md onto your personal github and share the github repo with us (sijie@finantier.co).
+	Hint: The repo name doesn't matter to us. If you like, you can even call it yellow-banana.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+- Overall, we adopt a "whole is greater than sum of its part" approach. This means that we would recommend you spend more time completing the whole test, rather than to enhance performance in any of the individual segments.
+- In other words, completing the whole test will gain you more points. 
+- However, if there are any parts of the test that you are stuck for a long time, feel free to skip it and submit just what you have done. 
+
+Lastly, if you have any question or doubt, feel free to check in with Si Jie (sijie@finantier.co).
